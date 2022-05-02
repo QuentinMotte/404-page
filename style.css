@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url(./images/pexels-pixabay-39348.jpg) center/cover no-repeat;
+    min-height: 100vh;
+}
+.error-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px 100px 0 0;
+}
+
+h1 {
+    font-family: "rubik glitch";
+    font-size: 10rem;
+    font-weight: 50;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0px 3px 20px rgba(48, 46, 46, 0.589);
+    opacity: 0.9;
+}
+p {
+    font-family: "acme";
+    font-size: 6rem;
+    max-width: 400px;
+    text-align: right;
+    margin-top: 70px;
+    opacity: 0.7;
+}
+button {
+    margin: 50px 250px 0 0;
+    padding: 30px 90px;
+    font-family: "acme";
+    font-size: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.288);
+    border: none;
+    box-shadow: 3px 2px 13px 4px;
+    transition: 0.1s;
+}
+button:hover {
+    transform: scale(1.1);
+    animation: scale-btn 2s linear infinite;
+}
+@keyframes scale-btn {
+    0% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(0.9);
+    }
+    66% {
+        transform: scale(1);
+    }
+    100% {
+        transorm: scale(1.1);
+    }
+}
+@media screen and (min-width: 1800px) {
+    .error-404 {
+        padding-right: 300px;
+    }
+}
